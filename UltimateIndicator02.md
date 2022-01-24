@@ -3,6 +3,8 @@
 
 //@version=5
 
+![](Images/Screenshot%20(172).png)
+
 indicator('Relative Strength', shorttitle='RS+MACD+RSI', overlay=false)
 
 ////////////////////////////////////////////////////RSI(RELATIVE STRENGTH INDICATOR)///////////////////////////////
