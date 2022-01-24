@@ -6,6 +6,7 @@
 //@version=5
 
 ![](Images/Screenshot%20(169).png)
+![](Images/Screenshot%20(168).png)
 
 
 // https://www.tradingview.com/pine-script-docs/en/v5/concepts/index.html
