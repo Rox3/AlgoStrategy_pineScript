@@ -5,7 +5,7 @@
 // © TradeIITian
 //@version=5
 
-
+![](Images/Screenshot%20(169).png)
 
 
 // https://www.tradingview.com/pine-script-docs/en/v5/concepts/index.html
