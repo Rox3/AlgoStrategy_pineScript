@@ -93,9 +93,9 @@ if ShowCrosses and MA2Visible and MA3Visible and ta.crossover(MA2, MA3)
 
 // plot - This will draw the information on the chart
 // plot - https://www.tradingview.com/pine-script-docs/en/v5/concepts/Plots.html
-plot(MA1Visible ? MA1 : na, color=color.new(color.green, 0), linewidth=2)
-plot(MA2Visible ? MA2 : na, color=color.new(color.yellow, 0), linewidth=2)
-plot(MA3Visible ? MA3 : na, color=color.new(color.red, 0), linewidth=2)
+plot(MA1Visible ? MA1 : na, color=color.new(color.yellow, 4), linewidth=2,title="MA1")
+plot(MA2Visible ? MA2 : na, color=color.new(color.orange, 4), linewidth=2, title="MA2")
+plot(MA3Visible ? MA3 : na, color=color.new(color.red, 2), linewidth=2,title="MA3")
 
 
 
@@ -120,37 +120,39 @@ MA1Forecast3 = (ma(MA1Type, MA1Source, MA1Period - 3) * (MA1Period - 3) + MA1Sou
 MA1Forecast4 = (ma(MA1Type, MA1Source, MA1Period - 4) * (MA1Period - 4) + MA1Source * 4 + Bias * 4) / MA1Period
 MA1Forecast5 = (ma(MA1Type, MA1Source, MA1Period - 5) * (MA1Period - 5) + MA1Source * 5 + Bias * 5) / MA1Period
 
-plot(ShowForecasts and MA1Visible ? MA1Forecast1 : na, color=color.new(color.green, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=1, show_last=1)
-plot(ShowForecasts and MA1Visible ? MA1Forecast2 : na, color=color.new(color.green, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=2, show_last=1)
-plot(ShowForecasts and MA1Visible ? MA1Forecast3 : na, color=color.new(color.green, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=3, show_last=1)
-plot(ShowForecasts and MA1Visible ? MA1Forecast4 : na, color=color.new(color.green, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=4, show_last=1)
-plot(ShowForecasts and MA1Visible ? MA1Forecast5 : na, color=color.new(color.green, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=5, show_last=1)
+plot(ShowForecasts and MA1Visible ? MA1Forecast1 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=1, show_last=1)
+plot(ShowForecasts and MA1Visible ? MA1Forecast2 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=2, show_last=1)
+plot(ShowForecasts and MA1Visible ? MA1Forecast3 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=3, show_last=1)
+plot(ShowForecasts and MA1Visible ? MA1Forecast4 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=4, show_last=1)
+plot(ShowForecasts and MA1Visible ? MA1Forecast5 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=5, show_last=1)
 
 
-MA2Forecast1 = (ma(MA2Type, MA2Source, MA2Period - 1) * (MA2Period - 1) + MA1Source * 1 + Bias * 1) / MA2Period
-MA2Forecast2 = (ma(MA2Type, MA2Source, MA2Period - 2) * (MA2Period - 2) + MA1Source * 2 + Bias * 2) / MA2Period
-MA2Forecast3 = (ma(MA2Type, MA2Source, MA2Period - 3) * (MA2Period - 3) + MA1Source * 3 + Bias * 3) / MA2Period
-MA2Forecast4 = (ma(MA2Type, MA2Source, MA2Period - 4) * (MA2Period - 4) + MA1Source * 4 + Bias * 4) / MA2Period
-MA2Forecast5 = (ma(MA2Type, MA2Source, MA2Period - 5) * (MA2Period - 5) + MA1Source * 5 + Bias * 5) / MA2Period
+MA2Forecast1 = (ma(MA2Type, MA2Source, MA2Period - 1) * (MA2Period - 1) + MA2Source * 1 + Bias * 1) / MA2Period
+MA2Forecast2 = (ma(MA2Type, MA2Source, MA2Period - 2) * (MA2Period - 2) + MA2Source * 2 + Bias * 2) / MA2Period
+MA2Forecast3 = (ma(MA2Type, MA2Source, MA2Period - 3) * (MA2Period - 3) + MA2Source * 3 + Bias * 3) / MA2Period
+MA2Forecast4 = (ma(MA2Type, MA2Source, MA2Period - 4) * (MA2Period - 4) + MA2Source * 4 + Bias * 4) / MA2Period
+MA2Forecast5 = (ma(MA2Type, MA2Source, MA2Period - 5) * (MA2Period - 5) + MA2Source * 5 + Bias * 5) / MA2Period
 
-plot(ShowForecasts and MA2Visible ? MA2Forecast1 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=1, show_last=1)
-plot(ShowForecasts and MA2Visible ? MA2Forecast2 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=2, show_last=1)
-plot(ShowForecasts and MA2Visible ? MA2Forecast3 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=3, show_last=1)
-plot(ShowForecasts and MA2Visible ? MA2Forecast4 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=4, show_last=1)
-plot(ShowForecasts and MA2Visible ? MA2Forecast5 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=5, show_last=1)
+plot(ShowForecasts and MA2Visible ? MA2Forecast1 : na, color=color.new(color.orange, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=1, show_last=1)
+plot(ShowForecasts and MA2Visible ? MA2Forecast2 : na, color=color.new(color.orange, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=2, show_last=1)
+plot(ShowForecasts and MA2Visible ? MA2Forecast3 : na, color=color.new(color.orange, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=3, show_last=1)
+plot(ShowForecasts and MA2Visible ? MA2Forecast4 : na, color=color.new(color.orange, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=4, show_last=1)
+plot(ShowForecasts and MA2Visible ? MA2Forecast5 : na, color=color.new(color.orange, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=5, show_last=1)
 
 
-MA3Forecast1 = (ma(MA3Type, MA3Source, MA3Period - 1) * (MA3Period - 1) + MA1Source * 1 + Bias * 1) / MA3Period
-MA3Forecast2 = (ma(MA3Type, MA3Source, MA3Period - 2) * (MA3Period - 2) + MA1Source * 2 + Bias * 2) / MA3Period
-MA3Forecast3 = (ma(MA3Type, MA3Source, MA3Period - 3) * (MA3Period - 3) + MA1Source * 3 + Bias * 3) / MA3Period
-MA3Forecast4 = (ma(MA3Type, MA3Source, MA3Period - 4) * (MA3Period - 4) + MA1Source * 4 + Bias * 4) / MA3Period
-MA3Forecast5 = (ma(MA3Type, MA3Source, MA3Period - 5) * (MA3Period - 5) + MA1Source * 5 + Bias * 5) / MA3Period
+MA3Forecast1 = (ma(MA3Type, MA3Source, MA3Period - 1) * (MA3Period - 1) + MA3Source * 1 + Bias * 1) / MA3Period
+MA3Forecast2 = (ma(MA3Type, MA3Source, MA3Period - 2) * (MA3Period - 2) + MA3Source * 2 + Bias * 2) / MA3Period
+MA3Forecast3 = (ma(MA3Type, MA3Source, MA3Period - 3) * (MA3Period - 3) + MA3Source * 3 + Bias * 3) / MA3Period
+MA3Forecast4 = (ma(MA3Type, MA3Source, MA3Period - 4) * (MA3Period - 4) + MA3Source * 4 + Bias * 4) / MA3Period
+MA3Forecast5 = (ma(MA3Type, MA3Source, MA3Period - 5) * (MA3Period - 5) + MA3Source * 5 + Bias * 5) / MA3Period
 
 plot(ShowForecasts and MA3Visible ? MA3Forecast1 : na, color=color.new(color.red, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=1, show_last=1)
 plot(ShowForecasts and MA3Visible ? MA3Forecast2 : na, color=color.new(color.red, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=2, show_last=1)
 plot(ShowForecasts and MA3Visible ? MA3Forecast3 : na, color=color.new(color.red, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=3, show_last=1)
 plot(ShowForecasts and MA3Visible ? MA3Forecast4 : na, color=color.new(color.red, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=4, show_last=1)
 plot(ShowForecasts and MA3Visible ? MA3Forecast5 : na, color=color.new(color.red, 0), linewidth=1, style=plot.style_circles, title='Long 200 EMA Forecast 1', offset=5, show_last=1)
+
+
 
 
 
