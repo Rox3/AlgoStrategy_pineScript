@@ -196,11 +196,11 @@ plot(MA1Resolution == '00 Current' and ShowForecasts and MA1Visible ? MA1Forecas
 plot(MA1Resolution == '00 Current' and ShowForecasts and MA1Visible ? MA1Forecast5 : na, color=color.new(color.green, 0), linewidth=1, style=plot.style_circles, title='MA1 Forecast 5', offset=5, show_last=1)
 
 
-MA2Forecast1 = (request.security(syminfo.tickerid, res(MA2Resolution), ma(MA2Type, MA2Source, MA2Period - 1)) * (MA2Period - 1) + MA1Source * 1 + Bias * 1) / MA2Period
-MA2Forecast2 = (request.security(syminfo.tickerid, res(MA2Resolution), ma(MA2Type, MA2Source, MA2Period - 2)) * (MA2Period - 2) + MA1Source * 2 + Bias * 2) / MA2Period
-MA2Forecast3 = (request.security(syminfo.tickerid, res(MA2Resolution), ma(MA2Type, MA2Source, MA2Period - 3)) * (MA2Period - 3) + MA1Source * 3 + Bias * 3) / MA2Period
-MA2Forecast4 = (request.security(syminfo.tickerid, res(MA2Resolution), ma(MA2Type, MA2Source, MA2Period - 4)) * (MA2Period - 4) + MA1Source * 4 + Bias * 4) / MA2Period
-MA2Forecast5 = (request.security(syminfo.tickerid, res(MA2Resolution), ma(MA2Type, MA2Source, MA2Period - 5)) * (MA2Period - 5) + MA1Source * 5 + Bias * 5) / MA2Period
+MA2Forecast1 = (request.security(syminfo.tickerid, res(MA2Resolution), ma(MA2Type, MA2Source, MA2Period - 1)) * (MA2Period - 1) + MA2Source * 1 + Bias * 1) / MA2Period
+MA2Forecast2 = (request.security(syminfo.tickerid, res(MA2Resolution), ma(MA2Type, MA2Source, MA2Period - 2)) * (MA2Period - 2) + MA2Source * 2 + Bias * 2) / MA2Period
+MA2Forecast3 = (request.security(syminfo.tickerid, res(MA2Resolution), ma(MA2Type, MA2Source, MA2Period - 3)) * (MA2Period - 3) + MA2Source * 3 + Bias * 3) / MA2Period
+MA2Forecast4 = (request.security(syminfo.tickerid, res(MA2Resolution), ma(MA2Type, MA2Source, MA2Period - 4)) * (MA2Period - 4) + MA2Source * 4 + Bias * 4) / MA2Period
+MA2Forecast5 = (request.security(syminfo.tickerid, res(MA2Resolution), ma(MA2Type, MA2Source, MA2Period - 5)) * (MA2Period - 5) + MA2Source * 5 + Bias * 5) / MA2Period
 
 plot(MA2Resolution == '00 Current' and ShowForecasts and MA2Visible ? MA2Forecast1 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='MA2 Forecast 1', offset=1, show_last=1)
 plot(MA2Resolution == '00 Current' and ShowForecasts and MA2Visible ? MA2Forecast2 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='MA2 Forecast 2', offset=2, show_last=1)
@@ -209,11 +209,11 @@ plot(MA2Resolution == '00 Current' and ShowForecasts and MA2Visible ? MA2Forecas
 plot(MA2Resolution == '00 Current' and ShowForecasts and MA2Visible ? MA2Forecast5 : na, color=color.new(color.yellow, 0), linewidth=1, style=plot.style_circles, title='MA2 Forecast 5', offset=5, show_last=1)
 
 
-MA3Forecast1 = (request.security(syminfo.tickerid, res(MA3Resolution), ma(MA3Type, MA3Source, MA3Period - 1)) * (MA3Period - 1) + MA1Source * 1 + Bias * 1) / MA3Period
-MA3Forecast2 = (request.security(syminfo.tickerid, res(MA3Resolution), ma(MA3Type, MA3Source, MA3Period - 2)) * (MA3Period - 2) + MA1Source * 2 + Bias * 2) / MA3Period
-MA3Forecast3 = (request.security(syminfo.tickerid, res(MA3Resolution), ma(MA3Type, MA3Source, MA3Period - 3)) * (MA3Period - 3) + MA1Source * 3 + Bias * 3) / MA3Period
-MA3Forecast4 = (request.security(syminfo.tickerid, res(MA3Resolution), ma(MA3Type, MA3Source, MA3Period - 4)) * (MA3Period - 4) + MA1Source * 4 + Bias * 4) / MA3Period
-MA3Forecast5 = (request.security(syminfo.tickerid, res(MA3Resolution), ma(MA3Type, MA3Source, MA3Period - 5)) * (MA3Period - 5) + MA1Source * 5 + Bias * 5) / MA3Period
+MA3Forecast1 = (request.security(syminfo.tickerid, res(MA3Resolution), ma(MA3Type, MA3Source, MA3Period - 1)) * (MA3Period - 1) + MA3Source * 1 + Bias * 1) / MA3Period
+MA3Forecast2 = (request.security(syminfo.tickerid, res(MA3Resolution), ma(MA3Type, MA3Source, MA3Period - 2)) * (MA3Period - 2) + MA3Source * 2 + Bias * 2) / MA3Period
+MA3Forecast3 = (request.security(syminfo.tickerid, res(MA3Resolution), ma(MA3Type, MA3Source, MA3Period - 3)) * (MA3Period - 3) + MA3Source * 3 + Bias * 3) / MA3Period
+MA3Forecast4 = (request.security(syminfo.tickerid, res(MA3Resolution), ma(MA3Type, MA3Source, MA3Period - 4)) * (MA3Period - 4) + MA3Source * 4 + Bias * 4) / MA3Period
+MA3Forecast5 = (request.security(syminfo.tickerid, res(MA3Resolution), ma(MA3Type, MA3Source, MA3Period - 5)) * (MA3Period - 5) + MA3Source * 5 + Bias * 5) / MA3Period
 
 plot(MA3Resolution == '00 Current' and ShowForecasts and MA3Visible ? MA3Forecast1 : na, color=color.new(color.red, 0), linewidth=1, style=plot.style_circles, title='MA3 Forecast 1', offset=1, show_last=1)
 plot(MA3Resolution == '00 Current' and ShowForecasts and MA3Visible ? MA3Forecast2 : na, color=color.new(color.red, 0), linewidth=1, style=plot.style_circles, title='MA3 Forecast 2', offset=2, show_last=1)
