@@ -2,7 +2,7 @@
 // © TradeIITian
 //@version=5
 
-![](Images/Screenshot%20(170).png)
+![](Images/Screenshot%20(175).png)
 
 // indicator(title, shorttitle, overlay, format, precision)
 // https://www.tradingview.com/pine-script-docs/en/v5/concepts/index.html
