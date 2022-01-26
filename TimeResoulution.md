@@ -7,6 +7,10 @@
 
 // indicator(title, shorttitle, overlay, format, precision)
 // https://www.tradingview.com/pine-script-docs/en/v5/concepts/index.html
+
+
+![](Images/Screenshot%20(176).png)
+![](Images/Screenshot%20(177).png)
 // -------------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------
 
