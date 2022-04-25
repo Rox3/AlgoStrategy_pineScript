@@ -1,0 +1,6 @@
+# AlgoStrategy
+Strategy capable of proving long entry and Indicators will provide advantage of multiple indicators on same chart
+# Ultimate Inidcator 01:
+Indicator capable of providing the features of multiple moving averages such as (SMA,EMA,RMA,WMA,HMA) etc. in a single indicator.
+# Ultimate Indicator 02:
+Indicator capable of providing the features of multiple indicator such as (RSI,MACD,RS) etc. in a single indicator.
